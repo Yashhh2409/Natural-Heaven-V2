@@ -12,8 +12,14 @@ export default function Layout() {
     <div className="min-h-screen" style={{ background: 'var(--bg)' }}>
       <Sidebar />
       <Topbar />
-      <main className="lg:ml-[220px] min-h-screen">
-        <Outlet />
+     <main className="lg:ml-[220px] flex-1 flex flex-col">
+        <div className="flex-1">
+          <Outlet />
+        </div>
+
+        <p className="text-center text-sm text-gray-500 py-3 opacity-70">
+          Designed & Built by © 2026 Yash Dhande
+        </p>
       </main>
       <BottomNav onMore={() => setDrawerOpen(true)} />
       <MobileDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />

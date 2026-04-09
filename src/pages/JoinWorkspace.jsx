@@ -100,7 +100,7 @@ export default function JoinWorkspace() {
       }
 
       setDone(true)
-      toast.success('Welcome to Natural Heaven! 🎉')
+      toast.success('Welcome to Sky View! 🎉')
       setTimeout(() => navigate('/'), 2000)
     } catch (err) {
       console.error('Join error:', err)
@@ -163,7 +163,7 @@ export default function JoinWorkspace() {
           <div className="w-16 h-16 rounded-2xl bg-brand flex items-center justify-center mb-4 shadow-lg shadow-brand/30">
             <Leaf size={28} className="text-white" />
           </div>
-          <h1 className="font-display text-2xl font-semibold">Natural Heaven</h1>
+          <h1 className="font-display text-2xl font-semibold">Sky View</h1>
           <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>Bondarwadi, Mahabaleshwar</p>
         </div>
 
@@ -176,7 +176,7 @@ export default function JoinWorkspace() {
             <div>
               <p className="font-semibold text-sm">You've been invited!</p>
               <p className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
-                Workspace: <strong style={{ color: 'var(--text)' }}>{invite?.workspaces?.name || 'Natural Heaven'}</strong>
+                Workspace: <strong style={{ color: 'var(--text)' }}>{invite?.workspaces?.name || 'Sky View'}</strong>
               </p>
               <p className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
                 Email: <strong style={{ color: 'var(--text)' }}>{invite?.email}</strong>

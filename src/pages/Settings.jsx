@@ -27,7 +27,7 @@ export default function Settings() {
   const { dark, toggle } = useTheme()
   const { workspace, myMember, members, invites, loading: wsLoading, isOwner, invite, revoke, cancelPendingInvite, update, refetch } = useWorkspace()
 
-  const [hotelName, setHotelName] = useState(() => localStorage.getItem('nh_hotel_name') || 'Natural Heaven')
+  const [hotelName, setHotelName] = useState(() => localStorage.getItem('nh_hotel_name') || 'Sky View')
   const [hotelAddress, setHotelAddress] = useState(() => localStorage.getItem('nh_hotel_address') || 'Bondarwadi, Mahabaleshwar')
 
   const [defaultRates, setDefaultRates] = useState({
@@ -339,11 +339,15 @@ export default function Settings() {
       <div className="card p-4">
         <p className="text-sm font-semibold mb-2">About</p>
         <div className="space-y-1 text-sm" style={{ color: 'var(--text-muted)' }}>
-          <p>App: Natural Heaven Hotel Manager</p>
+          <p>App: Sky View Hotel Manager</p>
           <p>Version: 2.0.0</p>
           <p>Logged in as: {user?.email}</p>
-          {myMember && <p>Role: <RoleBadge role={myMember.role} /></p>}
-          <p className="text-xs pt-1">Built with React, Supabase & Cloudinary</p>
+          {myMember &&
+          <div className='flex items-center gap-2'>
+            <span>Role: </span>
+            <RoleBadge role={myMember.role}/>
+          </div>
+          }
         </div>
       </div>
 

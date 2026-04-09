@@ -45,7 +45,7 @@ serve(async (req) => {
       <div style="width:56px;height:56px;background:rgba(255,255,255,0.2);border-radius:16px;display:inline-flex;align-items:center;justify-content:center;margin-bottom:16px;">
         <span style="font-size:28px;">🍃</span>
       </div>
-      <h1 style="color:#ffffff;margin:0;font-size:22px;font-weight:600;">Natural Heaven</h1>
+      <h1 style="color:#ffffff;margin:0;font-size:22px;font-weight:600;">Sky View</h1>
       <p style="color:rgba(255,255,255,0.8);margin:6px 0 0;font-size:14px;">Bondarwadi, Mahabaleshwar</p>
     </div>
 
@@ -87,7 +87,7 @@ serve(async (req) => {
     <!-- Footer -->
     <div style="padding:20px 40px;border-top:1px solid #f0f0f0;text-align:center;">
       <p style="color:#c0c0c0;font-size:12px;margin:0;">
-        Natural Heaven Hotel Management · Bondarwadi, Mahabaleshwar<br>
+        Sky View Hotel Management · Bondarwadi, Mahabaleshwar<br>
         If you didn't expect this invite, you can safely ignore this email.
       </p>
     </div>
@@ -102,9 +102,9 @@ serve(async (req) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Natural Heaven <onboarding@resend.dev>',
+        from: 'Sky View <onboarding@resend.dev>',
         to: [email],
-        subject: `You're invited to join ${workspaceName} on Natural Heaven`,
+        subject: `You're invited to join ${workspaceName} on Sky View`,
         html,
       }),
     })

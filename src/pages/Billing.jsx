@@ -61,7 +61,7 @@ export default function Billing() {
       <div className="card p-5" id="bill-content">
         {/* Hotel header */}
         <div className="text-center mb-5 pb-4 border-b" style={{ borderColor: 'var(--border)' }}>
-          <h2 className="font-display text-2xl font-semibold">Natural Heaven</h2>
+          <h2 className="font-display text-2xl font-semibold">Sky View</h2>
           <p className="text-sm mt-0.5" style={{ color: 'var(--text-muted)' }}>Bondarwadi, Mahabaleshwar</p>
           <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>INVOICE</p>
         </div>

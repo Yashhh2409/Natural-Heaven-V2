@@ -1,5 +1,5 @@
 /**
- * Workspace Service — Natural Heaven
+ * Workspace Service — Sky View
  * Multi-owner workspace management + email invite via Resend
  */
 
@@ -99,7 +99,7 @@ export async function getOrCreateWorkspace(userId, userEmail) {
   const { data: workspace } = await supabase
     .from('workspaces')
     .insert([{
-      name: localStorage.getItem('nh_hotel_name') || 'Natural Heaven',
+      name: localStorage.getItem('nh_hotel_name') || 'Sky View',
       address: localStorage.getItem('nh_hotel_address') || 'Bondarwadi, Mahabaleshwar',
       created_by: userId,
     }])

@@ -29,7 +29,7 @@ export default function Sidebar() {
             <Leaf size={18} className="text-white" />
           </div>
           <div>
-            <p className="font-display font-semibold text-sm leading-tight">Natural Heaven</p>
+            <p className="font-display font-semibold text-lg leading-tight">Sky View</p>
             <p className="text-[10px]" style={{ color: 'var(--text-muted)' }}>Mahabaleshwar</p>
           </div>
         </div>

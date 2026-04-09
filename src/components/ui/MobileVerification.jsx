@@ -47,7 +47,7 @@ export default function MobileVerification({ mobile, onVerified, onSkip, disable
     startCountdown()
     if (result.devOtp) {
       setDevOtp(result.devOtp)
-      toast(`Dev mode — OTP: ${result.devOtp}`, { icon: '🔐', duration: 15000 })
+      // toast(`Dev mode — OTP: ${result.devOtp}`, { icon: '🔐', duration: 15000 })
     }
     toast.success(`OTP sent to +91 ${mobile}`)
   }
@@ -163,11 +163,11 @@ export default function MobileVerification({ mobile, onVerified, onSkip, disable
           </div>
 
           {/* DEV mode hint */}
-          {devOtp && (
+          {/* {devOtp && (
             <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl px-3 py-2 text-xs text-yellow-700 dark:text-yellow-400 font-mono">
               🔐 Dev OTP: <strong>{devOtp}</strong>
             </div>
-          )}
+          )} */}
 
           {/* 6-box OTP input */}
           <div className="flex gap-2 justify-center" onPaste={handlePaste}>

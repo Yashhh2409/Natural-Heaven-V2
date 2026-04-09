@@ -1,5 +1,5 @@
 /**
- * OTP Service — Natural Heaven
+ * OTP Service — Sky View
  * Sends OTP via Supabase Edge Function → Fast2SMS (no CORS issues)
  * Falls back to dev toast when running locally without the edge function
  */

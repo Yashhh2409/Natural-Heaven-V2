@@ -1,4 +1,4 @@
--- Natural Heaven Hotel — Supabase Schema (v2)
+-- Sky View Hotel — Supabase Schema (v2)
 -- Run this FULL script in your Supabase SQL Editor
 -- Safe to re-run: uses IF NOT EXISTS / DO blocks
 

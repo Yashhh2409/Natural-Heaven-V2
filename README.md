@@ -1,8 +1,13 @@
-# 🍃 Natural Heaven — Hotel Management System v2
+# 🍃 Sky View — Hotel Management System v2
 
-Full-stack hotel room management web app for **Natural Heaven, Bondarwadi, Mahabaleshwar**.
+Full-stack hotel room management web app for **Sky View, Bondarwadi, Mahabaleshwar**.
 
 React + Vite · Supabase · Cloudinary · Chart.js · Mobile-first · Dark/Light mode
+
+
+Note - 
+1. When get domain then only we can use email using Resend.com serivces.
+
 
 ---
 
@@ -171,4 +176,4 @@ src/
 
 ---
 
-*Natural Heaven Hotel Management System — v2.0.0*
+*Sky View Hotel Management System — v2.0.0*

@@ -10,7 +10,7 @@ export default function Topbar() {
       style={{ background: 'var(--bg-card)', borderBottom: '0.5px solid var(--border)' }}
     >
       <div>
-        <span className="font-display font-semibold text-base text-brand">Natural Heaven</span>
+        <span className="font-display font-semibold text-base text-brand">Sky View</span>
         <p className="text-[10px] leading-tight" style={{ color: 'var(--text-muted)' }}>Mahabaleshwar</p>
       </div>
       <div className="flex items-center gap-1">

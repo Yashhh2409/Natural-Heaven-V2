@@ -36,7 +36,7 @@ export default function Login() {
           <div className="w-16 h-16 rounded-2xl bg-brand flex items-center justify-center mb-4 shadow-lg shadow-brand/30">
             <Leaf size={28} className="text-white" />
           </div>
-          <h1 className="font-display text-2xl font-semibold">Natural Heaven</h1>
+          <h1 className="font-display text-2xl font-semibold">Sky View</h1>
           <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>Bondarwadi, Mahabaleshwar</p>
         </div>
 
