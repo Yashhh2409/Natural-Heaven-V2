@@ -49,7 +49,7 @@ export default function Login() {
               <input
                 type="email"
                 className="input-field"
-                placeholder="owner@naturalheaven.in"
+                placeholder="owner@skyview.in"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 autoComplete="email"
@@ -84,7 +84,7 @@ export default function Login() {
         </div>
 
         <p className="text-center text-xs mt-6" style={{ color: 'var(--text-muted)' }}>
-          Hotel Management System v1.0
+          Hotel Management System v2.0
         </p>
       </div>
     </div>
