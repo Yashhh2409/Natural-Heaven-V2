@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #F8F7F4;
+    --bg-card: #FFFFFF;
+    --border: rgba(0,0,0,0.08);
+    --text: #1a1d2e;
+    --text-muted: #8892a4;
+  }
+  .dark {
+    --bg: #12151F;
+    --bg-card: #1C2030;
+    --border: rgba(255,255,255,0.07);
+    --text: #f0f0f4;
+    --text-muted: #8892a4;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    @apply font-sans;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  input, select, textarea {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .card {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+  }
+
+  .btn-primary {
+    @apply bg-brand text-white rounded-xl px-5 py-3 font-medium text-sm active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px];
+  }
+
+  .btn-secondary {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    @apply rounded-xl px-5 py-3 font-medium text-sm active:scale-95 transition-all min-h-[44px];
+  }
+
+  .btn-ghost {
+    @apply rounded-xl px-3 py-2 font-medium text-sm active:scale-95 transition-all min-h-[44px] text-brand;
+  }
+
+  .input-field {
+    background: var(--bg);
+    border: 0.5px solid var(--border);
+    color: var(--text);
+    @apply rounded-xl px-4 py-3 w-full text-sm focus:border-brand transition-colors;
+  }
+
+  .label {
+    @apply text-xs font-medium mb-1 block;
+    color: var(--text-muted);
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-vacant { @apply bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400; }
+  .badge-occupied { @apply bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400; }
+  .badge-cleaning { @apply bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400; }
+  .badge-maintenance { @apply bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400; }
+  .badge-active { @apply bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400; }
+  .badge-checked_out { @apply bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400; }
+  .badge-pending { @apply bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400; }
+  .badge-partial { @apply bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400; }
+  .badge-paid { @apply bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400; }
+
+  .page-container {
+    @apply pb-24 lg:pb-8 px-4 pt-4 max-w-5xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-base font-semibold mb-3;
+  }
+
+  .bottom-sheet-handle {
+    @apply w-10 h-1 rounded-full mx-auto mb-4;
+    background: var(--border);
+  }
+
+  /* Print styles */
+  @media print {
+    .no-print { display: none !important; }
+    .print-only { display: block !important; }
+    body { background: white !important; color: black !important; }
+    nav, header, aside { display: none !important; }
+    main { margin: 0 !important; padding: 0 !important; }
+    .card {
+      border: 1px solid #ddd !important;
+      box-shadow: none !important;
+      background: white !important;
+    }
+    #bill-content {
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 16px !important;
+    }
+  }
+  .print-only { display: none; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #8892a430; border-radius: 4px; }
+
+/* Bottom sheet animation */
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.slide-up { animation: slideUp 0.25s cubic-bezier(0.32, 0.72, 0, 1); }
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.2s ease; }
